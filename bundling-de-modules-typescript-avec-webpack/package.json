@@ -1,0 +1,24 @@
+{
+  "name": "bundling-de-modules-typescript-avec-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle:server": "webpack",
+    "watch-compile:server": "tsc --watch",
+    "watch-bundle:server": "webpack --watch",
+    "concurrent-watch": "concurrently npm:watch-*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
